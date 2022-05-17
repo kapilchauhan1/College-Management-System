@@ -2,15 +2,16 @@
 #footer{
     grid-area:footer;
     display:grid;
+    grid-template-rows: auto 1fr auto;
     place-items: center;
     place-content: center;
-    padding:4px;
+    padding:0px;
     padding-bottom: 0px;
     bottom:0px;
     text-align: center;
     background: rgb(0, 110, 255);
     color:white;
-    /* position: fixed; */
+    /* position: fixed;  */
 }
 .emoji{
     /* display: inline-block; */

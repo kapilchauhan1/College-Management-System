@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { listStudents } from '../actions/studentActions'
+//import { listStudents } from '../actions/studentActions'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
 import { AdmitCard } from '../components/AdmitCard'
@@ -23,6 +23,7 @@ const StudentClassAdmitCardDeep = ({ match }) => {
       type: STUDENT_CLASS_LIST_CLEAR,
     })
     dispatch(classlistStudent(matchid))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dispatch])
   return (
     <div className='container1'>

@@ -12,7 +12,7 @@ const DashboardCard = ({ takeme, title, number, image }) => {
         <div className='p'>
           <Counter upperlimit={number} />
         </div>
-        <img src={image} alt='No Image Data' />
+        <img src={image} alt='No Data' />
       </div>
     </Link>
   )

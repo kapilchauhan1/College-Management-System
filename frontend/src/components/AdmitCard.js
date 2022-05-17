@@ -6,9 +6,9 @@ export class AdmitCard extends React.Component {
       <div className='admitCardouter'>
         <div className='admitCard'>
           <div className='admitCardTop'>
-            <img src='/images/schoollogo.jpeg' alt='logo' />
+            <img src='/images/schoollogo1.jpg' alt='logo' />
             <div className='schooldetails'>
-              <h2>Hope International Academy</h2>
+              <h2>Jss Academy of Technical Education, Noida</h2>
               <h4>{this.props.examination}</h4>
             </div>
           </div>
@@ -30,7 +30,7 @@ export class AdmitCard extends React.Component {
             </div>
           </div>
           <div className='admitCardBottom' style={{ textAlign: 'center' }}>
-            <h4>In case any problem occurs, contact your school.</h4>
+            <h4>In case any problem occurs, contact your college.</h4>
             {/* <h4>In case any problem occurs, contact your school.</h4> */}
           </div>
         </div>

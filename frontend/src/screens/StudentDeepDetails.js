@@ -1,5 +1,5 @@
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+//import axios from 'axios'
+import React, { useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
@@ -13,9 +13,9 @@ const StudentDetails = ({ match }) => {
   const { loading, students, error } = studentClassList
   const studentDelete = useSelector((state) => state.studentDelete)
   const {
-    loading: loadingDelete,
+   // loading: loadingDelete,
     success: successDelete,
-    error: errorDelete,
+    //error: errorDelete,
   } = studentDelete
   useEffect(() => {
     dispatch(classlistStudent(matchid))

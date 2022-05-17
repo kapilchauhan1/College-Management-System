@@ -1,7 +1,7 @@
 .navbar {
     background: #ffffff;
     grid-area: nav;
-    background:steelblue;
+    background:rgb(76, 0, 255);
 
     height: 70px;
     display: flex;

@@ -90,7 +90,7 @@ router.post(
       age,
       email,
       registration_fees,
-      image,
+      //image,
     } = req.body
     // const student_info =
     const student_info =
@@ -129,7 +129,7 @@ router.post(
       previous_dues,
       registration_fees,
 
-      image,
+      //image,
     })
     console.log(new_student)
     if (new_student) {

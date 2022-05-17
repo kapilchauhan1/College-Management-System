@@ -4,7 +4,7 @@ import NepaliDate from 'nepali-date-converter'
 export default class Income extends Component {
   render() {
     // var allincome = []
-    var i = 0
+    //var i = 0
     return (
       <div className='innerIncome'>
         <p>{this.props.i}</p>

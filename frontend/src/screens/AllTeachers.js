@@ -4,16 +4,16 @@ import { listTeachers } from '../actions/teacherActions'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
 import { deleteTeacher } from '../actions/teacherActions'
-
+// eslint-disable-next-line no-empty-pattern
 const AllTeachers = ({}) => {
   const dispatch = useDispatch()
   const teacherList = useSelector((state) => state.teacherList)
   const { loading, teachers, error } = teacherList
   const teacherDelete = useSelector((state) => state.teacherDelete)
   const {
-    loading: loadingDelete,
+   // loading: loadingDelete,
     success: successDelete,
-    error: errorDelete,
+   // error: errorDelete,
   } = teacherDelete
   // const matchid = match.params.id
   useEffect(() => {
@@ -58,7 +58,7 @@ const AllTeachers = ({}) => {
                   <th>Address</th>
                   <th>Subject To Teach</th>
                   <th>Contact No</th>
-                  <th>Previous School</th>
+                  <th>Previous Workplace</th>
                   <th>Age</th>
 
                   <th>Salary</th>

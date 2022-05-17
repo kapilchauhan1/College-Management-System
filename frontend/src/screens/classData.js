@@ -1,56 +1,56 @@
 const Classes = [
   {
     _id: 1,
-    classname: 'Nursery',
+    classname: 'Computer Science and Engineering',
   },
   {
     _id: 2,
-    classname: 'LKG',
+    classname: 'Information Technology',
   },
   {
     _id: 3,
-    classname: 'UKG',
+    classname: 'Electronics and Communication Engineering',
   },
   {
     _id: 4,
-    classname: 'One',
+    classname: 'Mechanical Engineering',
   },
   {
     _id: 5,
-    classname: 'Two',
+    classname: 'Civil Engineering',
   },
   {
     _id: 6,
-    classname: 'Three',
+    classname: 'Elecronics and Electrical Engineering',
   },
   {
     _id: 7,
-    classname: 'Four',
+    classname: 'Electrical Engineering',
   },
 
   {
     _id: 8,
-    classname: 'Five',
+    classname: 'Chemical Engineering',
   },
   {
     _id: 9,
-    classname: 'Six',
+    classname: 'Aerospace Engineering',
   },
   {
     _id: 10,
-    classname: 'Seven',
+    classname: 'Industrial Engineering',
   },
   {
     _id: 11,
-    classname: 'Eight',
+    classname: 'Biotechnology',
   },
   {
     _id: 12,
-    classname: 'Nine',
+    classname: 'Environmental Engineering',
   },
   {
     _id: 13,
-    classname: 'Ten',
+    classname: 'Automobile Engineering',
   },
 ]
 

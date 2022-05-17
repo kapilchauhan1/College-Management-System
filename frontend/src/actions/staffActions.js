@@ -77,7 +77,7 @@ export const staffregister = (
   age,
   email,
   estimated_salary,
-  image,
+  //image,
   work
 ) => async (dispatch, getState) => {
   try {
@@ -110,7 +110,7 @@ export const staffregister = (
         age,
         email,
         estimated_salary,
-        image,
+       // image,
         work,
       },
       config

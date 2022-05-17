@@ -2,9 +2,9 @@ import React, { useState, useEffect, useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import Loader from '../components/Loader'
 // import Message from '../components/Message'
-import NepaliDate from 'nepali-date-converter'
+//import NepaliDate from 'nepali-date-converter'
 import Income from '../components/Income'
-import ReactToPrint from 'react-to-print'
+//import ReactToPrint from 'react-to-print'
 
 import Message from '../components/Message'
 // import link, { Link } from 'react-router-dom'
@@ -18,7 +18,7 @@ const IncomeScreen = () => {
   const componentRef = useRef()
 
   const dispatch = useDispatch()
-  const [particularmonth, setParticularmonth] = useState(false)
+  const [ setParticularmonth] = useState(false)
   const [
     particularmonthofparticularyear,
     setParticularmonthofparticularyear,
@@ -27,11 +27,11 @@ const IncomeScreen = () => {
   const { loading, allincome, error } = allIncome
   const [month, setMonth] = useState('')
   // const [error, setError] = useState('')
-  const [all, setAll] = useState('')
+  const [setAll] = useState('')
   const [year, setYear] = useState('')
   const [particularyear, setParticularyear] = useState(false)
   // const [data, setData] = useState([])
-  const [show, setShow] = useState(false)
+  const [ setShow] = useState(false)
   const Year = () => {
     setParticularmonth(false)
     setParticularmonthofparticularyear(false)
@@ -128,18 +128,18 @@ const IncomeScreen = () => {
             >
               <option value=''>Select Month</option>
 
-              <option value='Baisakh'>Baisakh</option>
-              <option value='Jestha'>Jestha</option>
-              <option value='Ashadh'>Ashadh</option>
-              <option value='Shrawan'>Shrawan</option>
-              <option value='Bhadra'>Bhadra</option>
-              <option value='Ashoj'>Ashoj</option>
-              <option value='Kartik'>Kartik</option>
-              <option value='Mangsir'>Mangsir</option>
-              <option value='Poush'>Poush</option>
-              <option value='Magh'>Magh</option>
-              <option value='Falgun'>Falgun</option>
-              <option value='Chaitra'>Chaitra</option>
+              <option value='January'>January</option>
+                    <option value='February'>February</option>
+                    <option value='March'>March</option>
+                    <option value='April'>April</option>
+                    <option value='May'>May</option>
+                    <option value='June'>June</option>
+                    <option value='July'>July</option>
+                    <option value='August'>August</option>
+                    <option value='September'>September</option>
+                    <option value='October'>October</option>
+                    <option value='November'>November</option>
+                    <option value='December'>December</option>
             </select>
             {/* {console.log(typeof data)} */}
             <button className='btn-search' type='submit'>

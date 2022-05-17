@@ -1,5 +1,5 @@
 import axios from 'axios'
-
+import dotenv from 'dotenv'
 import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Register } from '../actions/studentActions'
@@ -35,7 +35,7 @@ const StudentRegister = ({ history }) => {
     const file = e.target.files[0]
     const formData = new FormData()
     formData.append('file', file)
-    formData.append('upload_preset', CLOUDINARY_UPLOAD_PRESET)
+    formData.append('upload_preset',CLOUDINARY_UPLOAD_PRESET )
     setUploading(true)
     await axios({
       url: CLOUDINARY_URL,
@@ -67,8 +67,8 @@ const StudentRegister = ({ history }) => {
         gender,
         age,
         email,
-        registrationfees,
-        image
+        registrationfees
+        //image
       )
     )
     setName('')
@@ -152,19 +152,19 @@ const StudentRegister = ({ history }) => {
                   required
                 >
                   <option value=''>Select Class</option>
-                  <option value='Nursery'>Nursery</option>
-                  <option value='LKG'>LKG</option>
-                  <option value='UKG'>UKG</option>
-                  <option value='One'>One</option>
-                  <option value='Two'>Two</option>
-                  <option value='Three'>Three</option>
-                  <option value='Four'>Four</option>
-                  <option value='Five'>Five</option>
-                  <option value='Six'>Six</option>
-                  <option value='Seven'>Seven</option>
-                  <option value='Eight'>Eight</option>
-                  <option value='Nine'>Nine</option>
-                  <option value='Ten'>Ten</option>
+                  <option value='Computer Science and Engineering'>Computer Science and Engineering</option>
+                  <option value='Information Technology'>Information Technology</option>
+                  <option value='Electronics and Communication Engineering'>Electronics and Communication Engineering</option>
+                  <option value='Mechanical Engineering'>Mechanical Engineering</option>
+                  <option value='Civil Engineering'>Civil Engineering</option>
+                  <option value='Elecronics and Electrical Engineering'>Elecronics and Electrical Engineering</option>
+                  <option value='Electrical Engineering'>Electrical Engineering</option>
+                  <option value='Chemical Engineering'>Chemical Engineering</option>
+                  <option value='Aerospace Engineering'>Aerospace Engineering</option>
+                  <option value='Industrial Engineering'>Industrial Engineering</option>
+                  <option value='Biotechnology'>Biotechnology</option>
+                  <option value='Environmental Engineering'>Environmental Engineering</option>
+                  <option value='Automobile Engineering'>Automobile Engineering</option>
                 </select>
               </div>{' '}
               <div className='form-control'>
@@ -208,7 +208,7 @@ const StudentRegister = ({ history }) => {
                   required
                 />
               </div>
-              <div className='form-control'>
+              {/* <div className='form-control'>
                 <label htmlFor='name'>
                   Upload Picture
                   <input
@@ -225,7 +225,7 @@ const StudentRegister = ({ history }) => {
                     message='Picture uploaded successfully'
                   />
                 )}
-              </div>
+              </div> */}
               {/* <div className="register-btn"> */}
               {/* </div> */}
             </div>

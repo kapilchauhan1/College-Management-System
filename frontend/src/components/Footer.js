@@ -2,13 +2,9 @@ import React from 'react'
 import './Footer.css'
 const Footer = () => {
   return (
-    <div id='footer'>
+    <div id='footer1'>
       <span>
-        Designed and Developed with{` `}
-        <span className='emoji'>
-          <i className='fas fa-heart'></i>{' '}
-        </span>{' '}
-        by Upendra Dhamala
+      <img src='/images/jss.jpg' alt='logo' width="100%" height="auto" object-fit='fill' object-position='bottom' />
       </span>
     </div>
   )

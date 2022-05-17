@@ -24,7 +24,7 @@ const Login = ({ history, location }) => {
     //   password.type = 'password'
     // }
   }
-  const hideShow = () => {}
+  //const hideShow = () => {}
 
   useEffect(() => {
     if (userCred) {

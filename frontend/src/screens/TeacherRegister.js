@@ -71,7 +71,7 @@ const TeacherRegister = ({ history }) => {
         age,
         email,
         estimated_salary,
-        image,
+        //image,
         subjectToTeach
       )
     )
@@ -142,7 +142,7 @@ const TeacherRegister = ({ history }) => {
                 />
               </div>{' '}
               <div className='form-control'>
-                <label htmlFor='name'>Previous School</label>
+                <label htmlFor='name'>Previous Workplace</label>
                 <input
                   type='text'
                   value={previous_school}
@@ -214,7 +214,7 @@ const TeacherRegister = ({ history }) => {
                   required
                 />
               </div>
-              <div className='form-control'>
+              {/* <div className='form-control'>
                 <label htmlFor='name'>
                   Upload Picture
                   <input
@@ -231,7 +231,7 @@ const TeacherRegister = ({ history }) => {
                     message='Picture uploaded successfully'
                   />
                 )}
-              </div>
+              </div> */}
               {/* <div className="register-btn"> */}
               {/* </div> */}
             </div>

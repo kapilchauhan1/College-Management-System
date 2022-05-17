@@ -12,7 +12,7 @@ const StudentDeepAttendance = ({ match }) => {
   const [studentlist, setStudentlist] = useState([])
   const [present, setPresent] = useState({})
   const dispatch = useDispatch()
-  const [clicked, setClicked] = useState(false)
+  //const [clicked, setClicked] = useState(false)
   const studentAttendance = useSelector((state) => state.studentAttendance)
   const {
     loading: loadingattendance,

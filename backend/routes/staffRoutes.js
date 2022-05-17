@@ -31,7 +31,7 @@ router.post(
       age,
       email,
       estimated_salary,
-      image,
+      //image,
       work,
     } = req.body
     // const staff_info =
@@ -68,7 +68,7 @@ router.post(
       age,
       email,
       estimated_salary,
-      image,
+      //image,
       work,
     })
     console.log(new_staff)

@@ -4,16 +4,16 @@ import { listStaffs } from '../actions/staffActions'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
 import { deleteStaff } from '../actions/staffActions'
-
+// eslint-disable-next-line no-empty-pattern
 const AllStaffs = ({}) => {
   const dispatch = useDispatch()
   const staffList = useSelector((state) => state.staffList)
   const { loading, staffs, error } = staffList
   const staffDelete = useSelector((state) => state.staffDelete)
   const {
-    loading: loadingDelete,
+   // loading: loadingDelete,
     success: successDelete,
-    error: errorDelete,
+    //error: errorDelete,
   } = staffDelete
   // const matchid = match.params.id
   useEffect(() => {
@@ -58,7 +58,7 @@ const AllStaffs = ({}) => {
                   <th>Address</th>
                   <th>Work</th>
                   <th>Contact No</th>
-                  <th>Previous School</th>
+                  <th>Previous Workplace</th>
                   <th>Age</th>
 
                   <th>Salary</th>

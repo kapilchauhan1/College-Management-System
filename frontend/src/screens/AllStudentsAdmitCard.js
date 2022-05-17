@@ -1,20 +1,20 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { listStudents } from '../actions/studentActions'
 import Loader from '../components/Loader'
-import Message from '../components/Message'
+//import Message from '../components/Message'
 import './admitcard.css'
 
 import { AdmitCard } from '../components/AdmitCard'
 import { STUDENT_LIST_CLEAR } from '../constants/studentConstants'
 const AllStudentsAdmitCard = () => {
-  const [examno, setExamno] = useState('')
-  const handleSubmit = (e) => {
-    e.preventDefault()
-  }
+  //const [examno, setExamno] = useState('')
+ // const handleSubmit = (e) => {
+ //   e.preventDefault()
+  //}
   const dispatch = useDispatch()
   const studentList = useSelector((state) => state.studentList)
-  const { loading, students, error } = studentList
+  const { loading, students} = studentList
   const Print = () => {
     window.print()
   }

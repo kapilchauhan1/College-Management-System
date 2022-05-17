@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Classes from '../screens/classData'
-import axios from 'axios'
+//import axios from 'axios'
 import ClassItems from '../components/ClassItems'
 const StudentClassAdmitCard = () => {
   console.log(Classes)
-  const searchSubmit = (e) => {
-    e.preventDefault()
-    console.log('clicked')
-    // alert("Search icon is clicked.")
-  }
+  // const searchSubmit = (e) => {
+  //   e.preventDefault()
+  //   console.log('clicked')
+  //   // alert("Search icon is clicked.")
+  // }
   return (
     <div className='container2'>
       <div className='outer'>

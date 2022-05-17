@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Landing from './screens/Landing'
 // import
 // import { Button } from 'react-bootstrap'
@@ -27,7 +27,7 @@ import NotFound from './screens/NotFound'
 
 import ExpenseScreen from './screens/ExpenseScreen'
 import underConstruction from './components/underConstruction'
-import { studentAttendances } from './actions/studentActions'
+//import { studentAttendances } from './actions/studentActions'
 import PrivateRoute from '../src/utils/PrivateRoute'
 // import ExpenseScreen from './screens/ExpenseScreen'
 

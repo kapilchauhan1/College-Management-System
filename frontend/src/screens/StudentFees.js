@@ -75,7 +75,7 @@ const StudentFees = () => {
   useEffect(() => {
     dispatch({
       type: STUDENT_FEES_RESET,
-      type: STUDENT_SEARCH_CLEAR,
+      //type: STUDENT_SEARCH_CLEAR,
     })
   }, [dispatch])
   return (
@@ -99,19 +99,19 @@ const StudentFees = () => {
             required
           >
             <option value=''>Select Class</option>
-            <option value='Nursery'>Nursery</option>
-            <option value='LKG'>LKG</option>
-            <option value='UKG'>UKG</option>
-            <option value='One'>One</option>
-            <option value='Two'>Two</option>
-            <option value='Three'>Three</option>
-            <option value='Four'>Four</option>
-            <option value='Five'>Five</option>
-            <option value='Six'>Six</option>
-            <option value='Seven'>Seven</option>
-            <option value='Eight'>Eight</option>
-            <option value='Nine'>Nine</option>
-            <option value='Ten'>Ten</option>
+            <option value='Computer Science and Engineering'>Computer Science and Engineering</option>
+            <option value='Information Technology'>Information Technology</option>
+            <option value='Electronics and Communication Engineering'>Electronics and Communication Engineering</option>
+            <option value='Mechanical Engineering'>Mechanical Engineering</option>
+            <option value='Civil Engineering'>Civil Engineering</option>
+            <option value='Elecronics and Electrical Engineering'>Elecronics and Electrical Engineering</option>
+            <option value='Electrical Engineering'>Electrical Engineering</option>
+            <option value='Chemical Engineering'>Chemical Engineering</option>
+            <option value='Aerospace Engineering'>Aerospace Engineering</option>
+            <option value='Industrial Engineering'>Industrial Engineering</option>
+            <option value='Biotechnology'>Biotechnology</option>
+            <option value='Environmental Engineering'>Environmental Engineering</option>
+            <option value='Automobile Engineering'>Automobile Engineering</option>
           </select>
           <input
             type='number'
@@ -155,19 +155,19 @@ const StudentFees = () => {
                   <select id='class' value={student.classname}>
                     <option value=''>Select</option>
 
-                    <option value='Nursery'>Nursery</option>
-                    <option value='LKG'>LKG</option>
-                    <option value='UKG'>UKG</option>
-                    <option value='One'>One</option>
-                    <option value='Two'>Two</option>
-                    <option value='Three'>Three</option>
-                    <option value='Four'>Four</option>
-                    <option value='Five'>Five</option>
-                    <option value='Six'>Six</option>
-                    <option value='Seven'>Seven</option>
-                    <option value='Eight'>Eight</option>
-                    <option value='Nine'>Nine</option>
-                    <option value='Ten'>Ten</option>
+                    <option value='Computer Science and Engineering'>Computer Science and Engineering</option>
+                    <option value='Information Technology'>Information Technology</option>
+                    <option value='Electronics and Communication Engineering'>Electronics and Communication Engineering</option>
+                    <option value='Mechanical Engineering'>Mechanical Engineering</option>
+                    <option value='Civil Engineering'>Civil Engineering</option>
+                    <option value='Elecronics and Electrical Engineering'>Elecronics and Electrical Engineering</option>
+                    <option value='Electrical Engineering'>Electrical Engineering</option>
+                    <option value='Chemical Engineering'>Chemical Engineering</option>
+                    <option value='Aerospace Engineering'>Aerospace Engineering</option>
+                    <option value='Industrial Engineering'>Industrial Engineering</option>
+                    <option value='Biotechnology'>Biotechnology</option>
+                    <option value='Environmental Engineering'>Environmental Engineering</option>
+                    <option value='Automobile Engineering'>Automobile Engineering</option>
                   </select>
                 </div>{' '}
                 <div className='form-control'>
@@ -191,18 +191,18 @@ const StudentFees = () => {
                   >
                     <option value=''>Select Month</option>
 
-                    <option value='Baisakh'>Baisakh</option>
-                    <option value='Jestha'>Jestha</option>
-                    <option value='Ashadh'>Ashadh</option>
-                    <option value='Shrawan'>Shrawan</option>
-                    <option value='Bhadra'>Bhadra</option>
-                    <option value='Ashoj'>Ashoj</option>
-                    <option value='Kartik'>Kartik</option>
-                    <option value='Mangsir'>Mangsir</option>
-                    <option value='Poush'>Poush</option>
-                    <option value='Magh'>Magh</option>
-                    <option value='Falgun'>Falgun</option>
-                    <option value='Chaitra'>Chaitra</option>
+                    <option value='January'>January</option>
+                    <option value='February'>February</option>
+                    <option value='March'>March</option>
+                    <option value='April'>April</option>
+                    <option value='May'>May</option>
+                    <option value='June'>June</option>
+                    <option value='July'>July</option>
+                    <option value='August'>August</option>
+                    <option value='September'>September</option>
+                    <option value='October'>October</option>
+                    <option value='November'>November</option>
+                    <option value='December'>December</option>
                     {/* <option value='Ten'>Ten</option> */}
                   </select>
                 </div>{' '}

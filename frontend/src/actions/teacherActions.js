@@ -77,7 +77,7 @@ export const teacherregister = (
   age,
   email,
   estimated_salary,
-  image,
+  //image,
   subjectToTeach
 ) => async (dispatch, getState) => {
   try {
@@ -110,7 +110,7 @@ export const teacherregister = (
         age,
         email,
         estimated_salary,
-        image,
+        //image,
         subjectToTeach,
       },
       config

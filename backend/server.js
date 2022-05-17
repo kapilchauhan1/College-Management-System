@@ -1,7 +1,7 @@
 // following is the es modules declaration style in nodejs
 import express from 'express'
 import path from 'path'
-
+import cloudinary from 'cloudinary'
 // import products from "./data/"
 // const express = require('express')
 import dotenv from 'dotenv'
@@ -20,6 +20,11 @@ dotenv.config()
 connectDB()
 const app = express()
 app.use(express.json())
+// cloudinary.config({
+//   cloud_name: "dvcjnqzzk",
+//   api_key: "258523496321149",
+//   api_secret: "KbuO19E1ljTZMg_OX6obbitBUkI"
+// });
 
 app.get('/dashboard', async (req, res) => {
   const items = await Dashboard.find()
@@ -37,6 +42,30 @@ app.get('/api/config/cloudinary', (req, res) => {
 app.get('/api/config/cloudinarypreset', (req, res) => {
   res.send(process.env.CLOUDINARY_UPLOAD_PRESET)
 })
+// app.get("/", (req, res) => {
+//   res.send({ message: "Hey! This is your server response!" });
+// });
+// app.post("/image-upload", (request, response) => {
+//   // collected image from a user
+//   const data = {
+//     image: request.body.image,
+//   }
+
+//   // upload image here
+//   cloudinary.uploader.upload(data.image)
+//   .then((result) => {
+//     response.status(200).send({
+//       message: "success",
+//       result,
+//     });
+//   }).catch((error) => {
+//     response.status(500).send({
+//       message: "failure",
+//       error,
+//     });
+//   });
+
+// });
 const __dirname = path.resolve()
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '/frontend/build')))

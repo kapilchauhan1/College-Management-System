@@ -32,8 +32,8 @@ router.post(
       age,
       email,
       estimated_salary,
-      image,
-      subjectToTeach,
+      //image,
+      subjectToTeach
     } = req.body
     // const teacher_info =
     const teacher_info =
@@ -69,8 +69,8 @@ router.post(
       age,
       email,
       estimated_salary,
-      image,
-      subjectToTeach,
+      //image,
+      subjectToTeach
     })
     console.log(new_teacher)
     if (new_teacher) {

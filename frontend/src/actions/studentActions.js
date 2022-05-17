@@ -107,8 +107,8 @@ export const Register = (
   gender,
   age,
   email,
-  registration_fees,
-  image
+  registration_fees
+  //image
 ) => async (dispatch, getState) => {
   try {
     dispatch({
@@ -137,8 +137,8 @@ export const Register = (
         gender,
         age,
         email,
-        registration_fees,
-        image,
+        registration_fees
+        //image,
       },
       config
     )

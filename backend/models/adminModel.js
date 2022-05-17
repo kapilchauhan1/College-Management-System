@@ -4,23 +4,24 @@ const adminSchema = mongoose.Schema(
   {
     name: {
       type: String,
-      required: true,
+      //required: true,
     },
     email: {
       type: String,
       required: true,
+      //default:'admin1@example.com',
     },
     image: {
       type: String,
-      required: true,
     },
     password: {
       type: String,
       required: true,
+      //default:123456,
     },
     isAdmin: {
       type: Boolean,
-      required: true,
+     // required: true,
       default: false,
     },
   },
@@ -33,4 +34,9 @@ adminSchema.methods.matchPassword = async function (enteredPassword) {
   return await bcrypt.compare(enteredPassword, this.password)
 }
 const Admin = mongoose.model('Admin', adminSchema)
+var admin1 = new Admin({ name: 'Kapil', email:'admin1@example.com', password:'123456',isAdmin:true });
+admin1.save(function (err, book) {
+  if (err) return console.error(err);
+  console.log(book.name + " saved to bookstore collection.");
+});
 export default Admin

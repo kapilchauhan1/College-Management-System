@@ -4,16 +4,16 @@ import { listStudents } from '../actions/studentActions'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
 import { deleteStudent } from '../actions/studentActions'
-
+// eslint-disable-next-line no-empty-pattern
 const AllStudents = ({  }) => {
   const dispatch = useDispatch()
   const studentList = useSelector((state) => state.studentList)
   const { loading, students, error } = studentList
   const studentDelete = useSelector((state) => state.studentDelete)
   const {
-    loading: loadingDelete,
+    //loading: loadingDelete,
     success: successDelete,
-    error: errorDelete,
+    //error: errorDelete,
   } = studentDelete
   // const matchid = match.params.id
   useEffect(() => {

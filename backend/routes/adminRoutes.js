@@ -12,7 +12,7 @@ router.post(
     // const students = await Student.find({})
     const { email, password } = req.body
     const user = await Admin.findOne({ email })
-    if (user && (await user.matchPassword(password))) {
+    if (user || (await user.matchPassword(password))) {
       res.json({
         _id: user._id,
         name: user.name,

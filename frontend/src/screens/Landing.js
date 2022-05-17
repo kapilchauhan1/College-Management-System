@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import { useSelector } from 'react-redux'
+import React, { useState} from 'react'
+//import { useSelector } from 'react-redux'
 
 import Header from '../components/Header'
 import Sidebar from '../components/Sidebar'
@@ -8,8 +8,8 @@ import './Landing.css'
 
 const Landing = ({ history }) => {
   const [sidebarOpen, setsidebarOpen] = useState(false)
-  const userLogin = useSelector((state) => state.userLogin)
-  const { userCred } = userLogin
+  //const userLogin = useSelector((state) => state.userLogin)
+ // const { userCred } = userLogin
   const openSidebar = () => {
     setsidebarOpen(true)
   }
